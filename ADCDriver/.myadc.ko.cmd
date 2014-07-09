@@ -1,0 +1,1 @@
+cmd_/opt/NFSdir/Mini2440/ADCDriver/myadc.ko := arm-linux-ld -EL -r  -T /opt/linux-2.6.32.2/scripts/module-common.lds --build-id -o /opt/NFSdir/Mini2440/ADCDriver/myadc.ko /opt/NFSdir/Mini2440/ADCDriver/myadc.o /opt/NFSdir/Mini2440/ADCDriver/myadc.mod.o

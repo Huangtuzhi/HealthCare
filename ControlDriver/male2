@@ -1,0 +1,8 @@
+CC=arm-linux-gcc
+obj-m :=GPIOs.o
+KDIR :=/lib/modules/$(shell uname -r)/build
+PWD := $(shell pwd)
+default:
+	$(CC) -C $(KDIR) SUBDIRS=$(PWD) modules
+
+

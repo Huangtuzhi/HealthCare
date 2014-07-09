@@ -1,0 +1,8 @@
+CC=arm-linux-gcc
+CFLAG :=-Wall -DMODULE -D__KERNEL__ -DDEBUG_PRINTK -I /opt/linux-2.6.32.2/include/linux
+OBJ=GPIOs
+$(OBJ).o:$(OBJ).c
+	$(CC) $(CFLAG) -c $(OBJ).c
+clean:
+	rm -f *.o
+
